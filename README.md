@@ -6,15 +6,19 @@ An Astro-based landing page with Tailwind CSS, supporting integration with Googl
 
 This project is set up to easily integrate UI components created via Google AI Studio.
 
-**Quick Start:**
+### 💬 **Want to Paste Your Code Directly?**
+
+**Yes, you can!** Simply paste your Google AI Studio generated code (HTML/CSS/JS) and get help integrating it. See [QUICK_START.md](QUICK_START.md) for details.
+
+### 🚀 **DIY Integration:**
+
 1. Create your UI in [Google AI Studio](https://ai.google.dev/aistudio)
 2. Copy the generated code
-3. Create a new component in `src/components/`
-4. Import and use in your pages
+3. Use the template: `src/components/PasteYourCodeHere.astro`
+4. Paste your code in the marked sections
+5. Import and use in your pages
 
-**📚 See [GOOGLE_AI_STUDIO_GUIDE.md](GOOGLE_AI_STUDIO_GUIDE.md) for complete instructions and examples.**
-
-**🎯 Check out the example:** Run `npm run dev` and visit `/example` to see a sample integration.
+**📚 Full Guide:** [GOOGLE_AI_STUDIO_GUIDE.md](GOOGLE_AI_STUDIO_GUIDE.md) | **🎯 Live Example:** Run `npm run dev` and visit `/example`
 
 ## 🚀 Project Structure
 
@@ -25,10 +29,13 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/               # Static assets
 ├── src/
 │   ├── components/      # Reusable components (add Google AI Studio UIs here)
+│   │   ├── PasteYourCodeHere.astro  # Template for pasting code
+│   │   └── GoogleAIStudioExample.astro  # Working example
 │   ├── layouts/         # Page layouts
 │   ├── pages/           # Routes (each file = a route)
 │   └── styles/          # Global styles
-├── GOOGLE_AI_STUDIO_GUIDE.md  # How to integrate Google AI Studio UI
+├── QUICK_START.md       # How to paste code directly
+├── GOOGLE_AI_STUDIO_GUIDE.md  # Complete integration guide
 └── package.json
 ```
 

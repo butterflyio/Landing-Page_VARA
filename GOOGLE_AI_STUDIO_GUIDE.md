@@ -2,6 +2,8 @@
 
 This guide explains how to integrate UI components created in Google AI Studio into this Astro landing page.
 
+> 💡 **Quick Option:** Want to just paste your code and get help? See [QUICK_START.md](QUICK_START.md) for the fastest way to integrate your Google AI Studio code directly.
+
 ## What is Google AI Studio?
 
 Google AI Studio is a tool that allows you to generate code, components, and UIs using AI prompts. The generated code can be in various formats including HTML, CSS, JavaScript, React, or other frameworks.
