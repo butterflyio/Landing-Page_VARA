@@ -50,7 +50,7 @@ If your generated code is in React/JSX format:
 
 1. First, add React support to Astro:
    ```bash
-   npm run astro add react
+   npx astro add react
    ```
 
 2. Create a new file in `src/components/`:
