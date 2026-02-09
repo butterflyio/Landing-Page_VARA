@@ -1,0 +1,55 @@
+---
+// Example component that demonstrates how to integrate UI from Google AI Studio
+// This is a sample Hero section that you can replace with your own Google AI Studio generated code
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  ctaText?: string;
+  ctaLink?: string;
+}
+
+const { 
+  title = "Welcome to VARA", 
+  subtitle = "This is a sample component showing how to integrate Google AI Studio UI",
+  ctaText = "Get Started",
+  ctaLink = "/Landing-Page_VARA"
+} = Astro.props;
+---
+
+<section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold mb-6">
+        {title}
+      </h1>
+      <p class="text-xl mb-8 opacity-90">
+        {subtitle}
+      </p>
+      <a 
+        href={ctaLink}
+        class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+      >
+        {ctaText}
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 
+  TO REPLACE WITH YOUR GOOGLE AI STUDIO UI:
+  
+  1. Copy the HTML from Google AI Studio
+  2. Paste it in place of the <section> element above
+  3. If you have CSS, add it in a <style> block below
+  4. If you have JavaScript, add it in a <script> block below
+  5. Update the Props interface if you need different props
+-->
+
+<style>
+  /* Add any custom CSS from Google AI Studio here */
+</style>
+
+<script>
+  // Add any JavaScript from Google AI Studio here
+</script>
