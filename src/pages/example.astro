@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GoogleAIStudioExample from '../components/GoogleAIStudioExample.astro';
+
+// This is an example page showing how to use Google AI Studio generated components
+// You can create similar pages or modify index.astro to include your components
+---
+
+<Layout>
+  <!-- Example of using the Google AI Studio component -->
+  <GoogleAIStudioExample 
+    title="Your Custom UI from Google AI Studio"
+    subtitle="Replace this component with your own generated UI"
+    ctaText="Learn More"
+    ctaLink="#"
+  />
+  
+  <main class="max-w-4xl mx-auto py-20 px-4">
+    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        How to Add Your Google AI Studio UI
+      </h2>
+      <div class="prose prose-lg">
+        <ol class="space-y-4 text-gray-700">
+          <li>
+            <strong>Create your UI in Google AI Studio</strong> - Use prompts to generate the UI you want
+          </li>
+          <li>
+            <strong>Copy the generated code</strong> - Export or copy the HTML/CSS/JS from Google AI Studio
+          </li>
+          <li>
+            <strong>Create a new component</strong> - Make a new .astro file in src/components/
+          </li>
+          <li>
+            <strong>Paste your code</strong> - Add your Google AI Studio code to the component
+          </li>
+          <li>
+            <strong>Import and use</strong> - Import the component in any page and use it
+          </li>
+        </ol>
+        
+        <div class="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+          <p class="text-blue-900 font-semibold mb-2">📚 Full Documentation</p>
+          <p class="text-blue-800">
+            See the <code class="bg-blue-100 px-2 py-1 rounded">GOOGLE_AI_STUDIO_GUIDE.md</code> file 
+            in the root directory for complete instructions and examples.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

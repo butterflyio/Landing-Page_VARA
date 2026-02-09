@@ -1,10 +1,20 @@
-# Astro Starter Kit: Minimal
+# VARA Landing Page
 
-```sh
-npm create astro@latest -- --template minimal
-```
+An Astro-based landing page with Tailwind CSS, supporting integration with Google AI Studio generated UI components.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🤖 Using Google AI Studio UI
+
+This project is set up to easily integrate UI components created via Google AI Studio.
+
+**Quick Start:**
+1. Create your UI in [Google AI Studio](https://ai.google.dev/aistudio)
+2. Copy the generated code
+3. Create a new component in `src/components/`
+4. Import and use in your pages
+
+**📚 See [GOOGLE_AI_STUDIO_GUIDE.md](GOOGLE_AI_STUDIO_GUIDE.md) for complete instructions and examples.**
+
+**🎯 Check out the example:** Run `npm run dev` and visit `/example` to see a sample integration.
 
 ## 🚀 Project Structure
 
@@ -12,10 +22,13 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
-├── public/
+├── public/               # Static assets
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/      # Reusable components (add Google AI Studio UIs here)
+│   ├── layouts/         # Page layouts
+│   ├── pages/           # Routes (each file = a route)
+│   └── styles/          # Global styles
+├── GOOGLE_AI_STUDIO_GUIDE.md  # How to integrate Google AI Studio UI
 └── package.json
 ```
 
