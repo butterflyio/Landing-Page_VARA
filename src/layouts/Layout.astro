@@ -5,10 +5,23 @@ import '../styles/global.css';
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Astro + Strapi</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b028ecd840287511c0e3c2ee5184bf50/script.js"></script> 
+		<title>VARA | AI-Augmented Oversight</title>
+		<meta name="description" content="Exploring the future of virtual asset regulation and AI-driven compliance." />
+		<link rel="icon" type="image/svg+xml" href="/Landing-Page_VARA/favicon.svg" />
 	</head>
-	<body class="bg-gray-100">
-		<slot /> 
+	<body class="bg-gray-100 antialiased">
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
+
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+		scroll-behavior: smooth;
+	}
+</style>
