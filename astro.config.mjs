@@ -3,6 +3,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 import react from '@astrojs/react';
 
+import sitemap from '@astrojs/sitemap';
+
 export default defineConfig({
   site: 'https://butterflyio.github.io',
   base: '/Landing-Page_VARA',
@@ -11,5 +13,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  integrations: [react()]
+  integrations: [react(), sitemap()]
 });
