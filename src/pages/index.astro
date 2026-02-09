@@ -2,10 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 
 // This fetches data from your Heroku link
-const strapiUrl = import.meta.env.STRAPI_URL;
-const response = await fetch(`${strapiUrl}/api/posts?populate=*`);
-const json = await response.json();
-const data = json.data || [];
+const strapiUrl = import.meta.env.PUBLIC_STRAPI_URL || 'http://localhost:1337';
+
+// Temporarily disabled until Strapi content is ready
+// const response = await fetch(`${strapiUrl}/api/posts?populate=*`);
+// const json = await response.json();
+// const data = json.data || [];
+
+// Placeholder data
+const data = [];
 ---
 
 <Layout>
